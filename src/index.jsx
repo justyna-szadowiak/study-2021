@@ -1,29 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import faker from "faker";
-import CommentDetail from "./CommentDetail";
+import ExtraData from "./ExtraData";
 
 const App = () => {
   return (
-    <div className="ui container comments">
-      <CommentDetail
-        author="Sam"
-        timeAgo="Today at 7.45AM"
-        comment="Great!"
-        avatar={faker.image.avatar()}
-      />
-      <CommentDetail
-        author="Alex"
-        timeAgo="Yesterday at 9:35PM"
-        comment="Good job!"
-        avatar={faker.image.avatar()}
-      />
-      <CommentDetail
-        author="Jim"
-        timeAgo="Yesterday at 6:05PM"
-        comment="Very interesting"
-        avatar={faker.image.avatar()}
-      />
+    <div>
+      <ExtraData>
+        <div className="ui icon header">
+          <i className="pdf file outline icon"></i>
+          No document are listed for this customer.
+        </div>
+        <div className="ui primary button">Add document</div>
+      </ExtraData>
+      <ExtraData>
+        <h4 class="ui header">For Your Information</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur, adipisci elit, sed eius modi
+          tempora incidunt, ut labore et dolore magna aliqua. Ut enim ad minima
+          veniam, quis nostru exercitation ullam co laborios.
+        </p>
+      </ExtraData>
     </div>
   );
 };
